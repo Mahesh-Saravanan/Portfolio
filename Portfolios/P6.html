@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Resume Website Template Free Download</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Resume Website Template Free Download" name="keywords">
+        <meta content="Resume Website Template Free Download" name="description">
+
+		
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+       <link href="css/style.css" rel="stylesheet">
+	   <style>
+	   .header img {
+	
+     /* Set the width of the image */
+	float: left; /* Float the image to the left */
+    margin-right: 20px; /* Add spacing between image and text */
+	margin-left: 30px;
+    max-width: 150px; /* Set maximum width for the image */
+    height: auto;  /* Add spacing between image and text */
+	padding-top: 28px;
+	   </style>
+
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="51">
+        <div class="wrapper">
+            
+            <div class="content">
+                <!-- Header Start -->
+                <div class="header">
+				
+				<img src="img/P6/head.png" alt="Image">
+				<h1>Human action Recogonition - comparative study</h1>	
+				</div>
+                <!-- Header End -->
+                
+                
+                <!-- Large Button End -->
+                
+                <!-- About Start -->
+                <div class="about" id="about">
+                    <div class="content-inner">
+                        <div class="content-header">
+                            <h2>Overview</h2>
+                        </div>
+                        <div class="row align-items-center">
+                            
+                            <div>
+                                <p>
+                                This project was undertaken as part of a study assignment at THWS. Our team focused on developing diverse machine learning models for human action estimation utilizing the widely used OpenPose dataset. Additionally, the project involved thorough comparisons and justifications of the models' performances.
+								</p>
+                            </div>
+                        </div>
+						<div class="content-header">
+                            <h2>Dataset</h2>
+                        </div>
+                        <div class="row align-items-center">
+                            
+                            <div>
+                                <p>
+                                The OpenPose dataset comprises key points of body parts such as the head, arms, and hips, extracted from humans performing 5 different activities. Each key point is represented by its x and y coordinates, accompanied by a confidence score. A total of 1500 such data points are utilized for training purposes.
+								</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- About End -->
+				<!-- Tab buttons -->
+<button class="tab-button" onclick="openTab(event, 'tab1')">CNN 1D</button>
+<button class="tab-button" onclick="openTab(event, 'tab2')">CNN 2D</button>
+<button class="tab-button" onclick="openTab(event, 'tab3')">LSTM</button>
+<button class="tab-button" onclick="openTab(event, 'tab4')">RF</button>
+<button class="tab-button" onclick="openTab(event, 'tab5')">DTW</button>
+
+<div>
+<!-- Tab content -->
+<script>
+ window.onload = function() {
+        // Call the openTab function with the tab name you want to open
+        openTab(event, 'tab1'); // Adjust the tab name as needed
+    };
+</script>
+<div id="tab1" class="tab-content">
+    
+    <p>CNN (Convolutional Neural Network)1D is commonly employed for processing one-dimensional sequential data such as time series or signals. Each key point is treated as a 1D sequence, allowing CNN 1D models to capture local patterns and hierarchies effectively, making them suitable for classification tasks.
+</p>
+	<div id="imageContainer">
+        <img  src="img/P6/tab1.png" alt="Description of the image">
+    </div>
+</div>
+
+<div id="tab2" class="tab-content">
+    
+    <p> CNN (Convolutional Neural Network) 2D architecture is tailored for processing two-dimensional structured data like images. In our context, the data consists of images with keypoints of various body parts and time (15 frames) as the axis. CNN 2D models utilize hierarchical feature representations to identify patterns and relationships within timesteps, making them proficient in classification tasks.
+</p>
+	<div id="imageContainer">
+        <img src="img/P6/tab2.png" alt="Description of the image">
+    </div>
+</div>
+
+<div id="tab3" class="tab-content">
+    
+    <p>LSTM (Long Short-Term Memory) is a type of recurrent neural network suitable for processing sequential data with long-range dependencies. It incorporates memory cells and gating mechanisms to retain and update information over time. LSTM is utilized to extract temporal features from the data, which is crucial in sequential problems.</p>
+	<div id="imageContainer">
+        <img src="img/P6/tab3.png" alt="Description of the image">
+    </div>
+</div>
+<div id="tab4" class="tab-content">
+    <p>Random Forest is an ensemble learning method comprising multiple decision trees trained on random subsets of dataset features. It aggregates predictions from individual trees through averaging or voting, resulting in robust and accurate predictions. In our approach, every 100 frames are flattened, and class prediction is made using Random Forest. The final class is determined based on maximum vote.
+</p>
+</div>
+<div id="tab5" class="tab-content">
+    <p>DTW is a technique used to measure similarity between two time series sequences, even when they have different lengths or are temporally distorted. It dynamically aligns sequences by warping them in time to find the optimal matching. In our application, the movement of keypoints is treated as a sequence and compared for similarity against an ideal datapoint. Class prediction is made based on maximum similarity</p>
+</div>
+
+				<div class="service" id="service">
+                    <div class="content-inner">
+                        <div class="content-header">
+                            <h2>Skills</h2>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="srv-col">
+                                    <i class="fas fa-database"></i>
+                                    <h3>Data Preprocessing </h3>
+                                    <p>Data cleaning, Outlier detection, statistical analysis</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="srv-col">
+                                    <i class="fas fa-network-wired"></i>
+                                    <h3>Deep Learning </h3>
+                                    <p> Convolutional Neural Network, Recurrent Neural Networks</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="srv-col">
+                                    <i class="fas fa-robot"></i>
+                                    <h3>Machine learning </h3>
+                                    <p>Random Forest, Principal Component analysis , Dynamic Time wraping</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="srv-col">
+                                    <i class="fab fa-python"></i>
+                                    <h3>Python Libraries</h3>
+                                    <p>PyTorch, TensorFlow, Sklearn, OpenCV</p>
+                                </div>
+                            </div>
+							
+                        </div>
+                    </div>
+                </div>
+				<div class="portfolio" id="portfolio">
+                    <div class="content-inner">
+                        <div class="content-header">
+                            <h2>Gallery</h2>
+                        </div>
+                        
+                        <div class="row portfolio-container">
+                            <div class="col-lg-4 col-md-6 portfolio-item ml">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="img/P6/gal1.png" class="img-fluid" alt="">
+                                        <a href="img/P6/gal1.png" data-lightbox="portfolio" data-title="Project Name" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a class="portfolio-title" href="img/P6/gal1.png">Training data distribution</a>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 portfolio-item ml">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="img/P6/gal2.png" class="img-fluid" alt="">
+                                        <a href="img/P6/gal2.png" data-lightbox="portfolio" data-title="Project Name" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
+                                         
+                                        <a class="portfolio-title" href="img/P6/gal2.png">Confusion Matrices</a>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 portfolio-item soft">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="img/P6/gal3.png" class="img-fluid" alt="">
+                                        <a href="img/P6/gal3.png" data-lightbox="portfolio" data-title="Project Name" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
+                                         
+                                        <a class="portfolio-title" href="img/P6/gal3.png">Predictions on Test data</span></a>
+                                    </figure>
+                                </div>
+                            </div>
+							
+
+							<div class="col-lg-4 col-md-6 portfolio-item port">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <video id="hover-video" controls>
+										<source src="img/P6/galv1.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+									</video>
+									<!-- Video overlay -->
+									<div class="video-overlay" id="video-overlay">
+										<!-- Play icon -->
+										<i class="fas fa-play play-icon" id="play-icon"></i>
+									</div>
+									</figure>
+                                </div>
+                            </div>
+							
+							
+                        </div>
+                    </div>
+                </div>
+				<div class="about" id="about">
+                    <div class="content-inner">
+                        
+                    
+                        <div class="content-header">
+                            <h2>Links</h2>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="contact-info">
+                                    <div class="social">
+										<a class="btn" href="https://github.com/Mahesh-Saravanan/Human-Action-Estimation.git"><i class="fab fa-github"></i></a>
+                                        <a class="btn" href="https://www.kaggle.com/competitions/learning-of-structured-datafhws-ws2223"><i class="fab fa-kaggle"></i></a>
+                                        
+                             
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    
+                
+				
+						
+                        
+                    
+		            
+        <!-- Add more rows as needed -->
+    </div>
+                
+                <!-- Footer Start -->
+            </div>
+        </div>
+		 
+        
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+        <script src="lib/typed/typed.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        
+        <!-- Template Javascript -->
+        <script>
+        (function ($) {
+    "use strict";
+    
+    // Smooth scrolling on the navbar links
+    $(".navbar-nav a").on('click', function (event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            
+            $('html, body').animate({
+                scrollTop: $(this.hash).offset().top - 30
+            }, 1500, 'easeInOutExpo');
+            
+            if ($(this).parents('.navbar-nav').length) {
+                $('.navbar-nav .active').removeClass('active');
+                $(this).closest('a').addClass('active');
+            }
+        }
+    });
+    
+
+    // Typed Initiate
+    if ($('.header h2').length == 1) {
+        var typed_strings = $('.header .typed-text').text();
+        var typed = new Typed('.header h2', {
+            strings: typed_strings.split(', '),
+            typeSpeed: 100,
+            backSpeed: 20,
+            smartBackspace: false,
+            loop: true
+        });
+    }
+    
+    
+    // Skills
+    $('.skills').waypoint(function () {
+        $('.progress .progress-bar').each(function () {
+            $(this).css("width", $(this).attr("aria-valuenow") + '%');
+        });
+    }, {offset: '80%'});
+    
+    
+    // Porfolio isotope and filter
+    var portfolioIsotope = $('.portfolio-container').isotope({
+        itemSelector: '.portfolio-item',
+        layoutMode: 'fitRows'
+    });
+
+    $('#portfolio-flters li').on('click', function () {
+        $("#portfolio-flters li").removeClass('filter-active');
+        $(this).addClass('filter-active');
+
+        portfolioIsotope.isotope({filter: $(this).data('filter')});
+    });
+    
+    
+    // Review slider
+    $('.review-slider').slick({
+        autoplay: true,
+        dots: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+    
+    
+    // Back to top button
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.back-to-top').fadeIn('slow');
+        } else {
+            $('.back-to-top').fadeOut('slow');
+        }
+    });
+    $('.back-to-top').click(function () {
+        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        return false;
+    });
+})(jQuery);
+</script>
+<script>
+
+    // Function to open the specified tab content
+    function openTab(evt, tabName) {
+        var i, tabContent, tabButton;
+
+        // Hide all tab content
+        tabContent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabContent.length; i++) {
+            tabContent[i].style.display = "none";
+        }
+
+        // Remove the "active" class from all tab buttons
+        tabButton = document.getElementsByClassName("tab-button");
+        for (i = 0; i < tabButton.length; i++) {
+            tabButton[i].className = tabButton[i].className.replace(" active", "");
+        }
+
+        // Show the specific tab content and mark the button as active
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Open the default tab on page load
+    document.getElementById("tab1").style.display = "block";
+    document.getElementsByClassName("tab-button")[0].className += " active";
+	const overlays = document.querySelectorAll('.overlay');
+
+// Add click event listener to each overlay
+overlays.forEach(overlay => {
+    overlay.addEventListener('click', () => {
+        // Get the image source from the parent gallery-item
+        const imgSrc = overlay.parentNode.querySelector('img').src;
+        // Open the image in a new window or tab
+        window.open(imgSrc);
+    });
+});
+	
+</script>
+
+  </body>
+</html>

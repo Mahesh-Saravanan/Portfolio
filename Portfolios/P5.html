@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Resume Website Template Free Download</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Resume Website Template Free Download" name="keywords">
+        <meta content="Resume Website Template Free Download" name="description">
+
+		
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+       <link href="css/style.css" rel="stylesheet">
+	   
+
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="51">
+        <div class="wrapper">
+            
+            <div class="content">
+                <!-- Header Start -->
+                <div class="header">
+				
+				<img src="img/P5/head.png" alt="Image">
+				<h1>Self learning Blackjack player using Markov Decision process</h1>	
+				</div>
+                <!-- Header End -->
+                
+                
+                <!-- Large Button End -->
+                
+                <!-- About Start -->
+                <div class="about" id="about">
+                    <div class="content-inner">
+                        <div class="content-header">
+                            <h2>Overview</h2>
+                        </div>
+                        <div class="row align-items-center">
+                            
+                            <div>
+                                <p>
+                                This project was undertaken as part of the portfolio exam during Masters studies. This project outlines the implementation of a self-learning blackjack player using Markov decision process principles. The game environment was developed in Python, with the basic strategy learning executed through the Q-learning method. The project involved experimentation with various rules and hyperparameters to observe the growth of win rate and changes in policy.
+								</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- About End -->
+				<!-- Tab buttons -->
+<button class="tab-button" onclick="openTab(event, 'tab1')">Environment</button>
+<button class="tab-button" onclick="openTab(event, 'tab2')">Q- Learning</button>
+
+<div>
+<!-- Tab content -->
+<script>
+ window.onload = function() {
+        // Call the openTab function with the tab name you want to open
+        openTab(event, 'tab1'); // Adjust the tab name as needed
+    };
+</script>
+<div id="tab1" class="tab-content">
+    
+    <p>The blackjack environment is implemented in Python, meticulously replicating the basic gameplay and strategies, including card counting techniques. The rules adhere closely to those outlined in the book "Beat the Dealer".</p>
+    <div id="imageContainer">
+        <img  src="img/P5/tab1.jpg" alt="Description of the image">
+    </div>
+	<p>During each game, the agent has two possible actions: "Pick" or "Stick". The state of the game is represented by the sum of the player's cards and the dealer's initial card. Rewards are provided at the end of every game based on the outcome.</p>
+	
+</div>
+
+<div id="tab2" class="tab-content">
+    
+    <p>The learning policy is defined by the Q-table, which comprises state-action pairs storing the probabilities of all possible actions at each state. This table is formed by the states and actions of the environment.</p>
+    <p>For the basic strategy of Blackjack, the dimension of the Q-table is 310×10 (maximum states and actions). For the card counting strategy, the dimension is ((310 x 2) x 10) as each single state has 2 sub-states. The Q-table serves as the policy, guiding the agent to take actions at particular states.</p>
+	<div id="imageContainer">
+        <img src="img/P5/tab2.jpg" alt="Description of the image">
+    </div>
+	<p>The values of the Q-table are updated for each reward obtained using Bellman's equation. A total of 100,000 games are played, with exploration and exploitation managed by the epsilon-greedy approach. A maximum win rate of 44% is achieved, which is comparable to human gameplay.</p>
+</div>
+
+<div id="tab3" class="tab-content">
+    
+    <p>The Bot's driving policy is learned through training within the custom-designed simulator using a Double Deep Q Learning setup (DDQN). Operating within the framework of a Markov Decision Process, the policy predicts the optimal action based on Lidar observations and executes it accordingly. Hardware calibration ensures smooth execution of these actions.</p>
+	<div id="imageContainer">
+        <img src="img/P1/tab3.png" alt="Description of the image">
+    </div>
+</div>
+
+				<div class="service" id="service">
+                    <div class="content-inner">
+                        <div class="content-header">
+                            <h2>Skills</h2>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="srv-col">
+                                    <i class="fa fa-robot"></i>
+                                    <h3>Reinforcement Learning</h3>
+                                    <p>Environment, Action, Reward, State, Agent</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="srv-col">
+                                    <i class="fas fa-sync-alt"></i>
+                                    <h3>Markov Decision process</h3>
+                                    <p> Discount factor, policy and value iteration</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="srv-col">
+                                    <i class="fas fa-chart-line"></i>
+                                    <h3>Epsilon Greedy Policy</h3>
+                                    <p>Exploration and Exploitation tradeoff</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="srv-col">
+                                    <i class="fas fa-brain"></i>
+                                    <h3>Q- Learning</h3>
+                                    <p>Q- table and values, Bellman Equation</p>
+                                </div>
+                            </div>
+							
+                        </div>
+                    </div>
+                </div>
+				<div class="portfolio" id="portfolio">
+                    <div class="content-inner">
+                        <div class="content-header">
+                            <h2>Gallery</h2>
+                        </div>
+                        
+                        <div class="row portfolio-container">
+                            <div class="col-lg-4 col-md-6 portfolio-item ml">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="img/P5/gal1.png" class="img-fluid" alt="">
+                                        <a href="img/P5/gal1.png" data-lightbox="portfolio" data-title="Project Name" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a class="portfolio-title" href="img/P5/gal1.png">Rewards</a>
+                                    </figure>
+                                </div>
+							</div>	
+							<div class="col-lg-4 col-md-6 portfolio-item ml">
+								<div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="img/P5/gal2.png" class="img-fluid" alt="">
+                                        <a href="img/P5/gal2.png" data-lightbox="portfolio" data-title="Project Name" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a class="portfolio-title" href="img/P5/gal2.png">Epsilon greedy policy</a>
+                                    </figure>
+                                </div>
+							</div>	
+							<div class="col-lg-4 col-md-6 portfolio-item ml">
+								<div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="img/P5/gal3.png" class="img-fluid" alt="">
+                                        <a href="img/P5/gal3.png" data-lightbox="portfolio" data-title="Project Name" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a class="portfolio-title" href="img/P5/gal3.png">Learned strategy</a>
+                                    </figure>
+                                </div>
+							</div>	
+							<div class="col-lg-4 col-md-6 portfolio-item ml">
+								<div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="img/P5/gal4.png" class="img-fluid" alt="">
+                                        <a href="img/P5/gal4.png" data-lightbox="portfolio" data-title="Project Name" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a class="portfolio-title" href="img/P5/gal4.png">Winrate growth during learning</a>
+                                    </figure>
+                                </div>
+							</div>	
+							<div class="col-lg-4 col-md-6 portfolio-item ml">
+								<div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="img/P5/gal5.png" class="img-fluid" alt="">
+                                        <a href="img/P5/gal5.png" data-lightbox="portfolio" data-title="Project Name" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a class="portfolio-title" href="img/P5/gal5.png">Average winrate for different dealer threshold</a>
+                                    </figure>
+                                </div>
+								
+                            </div>					
+                        </div>
+                    </div>
+                </div>
+				<div class="about" id="about">
+                    <div class="content-inner">
+                        
+                        <div class="content-header">
+                            <h2>Links</h2>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="contact-info">
+                                    <div class="social">
+										<a class="btn" href="https://github.com/Mahesh-Saravanan/Learn-to-play-Black-Jack.git"><i class="fab fa-github"></i></a>
+                                        <a class="btn" href="https://drive.google.com/file/d/1s3TY4XAa_jCAtrolgC7hxIxZ0lyUJYBB/view?usp=sharing"><i class="far fa-file-pdf"></i></a>
+										<a class="btn" href="https://www.edwardothorp.com/books/beat-the-dealer/"><i class="fas fa-book"></i></a>
+                             
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    
+                
+				
+						
+                        
+                    
+		            
+        <!-- Add more rows as needed -->
+    </div>
+                
+                <!-- Footer Start -->
+            </div>
+        </div>
+		 
+        
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+        <script src="lib/typed/typed.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        
+        <!-- Template Javascript -->
+        <script>
+        (function ($) {
+    "use strict";
+    
+    // Smooth scrolling on the navbar links
+    $(".navbar-nav a").on('click', function (event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            
+            $('html, body').animate({
+                scrollTop: $(this.hash).offset().top - 30
+            }, 1500, 'easeInOutExpo');
+            
+            if ($(this).parents('.navbar-nav').length) {
+                $('.navbar-nav .active').removeClass('active');
+                $(this).closest('a').addClass('active');
+            }
+        }
+    });
+    
+
+    // Typed Initiate
+    if ($('.header h2').length == 1) {
+        var typed_strings = $('.header .typed-text').text();
+        var typed = new Typed('.header h2', {
+            strings: typed_strings.split(', '),
+            typeSpeed: 100,
+            backSpeed: 20,
+            smartBackspace: false,
+            loop: true
+        });
+    }
+    
+    
+    // Skills
+    $('.skills').waypoint(function () {
+        $('.progress .progress-bar').each(function () {
+            $(this).css("width", $(this).attr("aria-valuenow") + '%');
+        });
+    }, {offset: '80%'});
+    
+    
+    // Porfolio isotope and filter
+    var portfolioIsotope = $('.portfolio-container').isotope({
+        itemSelector: '.portfolio-item',
+        layoutMode: 'fitRows'
+    });
+
+    $('#portfolio-flters li').on('click', function () {
+        $("#portfolio-flters li").removeClass('filter-active');
+        $(this).addClass('filter-active');
+
+        portfolioIsotope.isotope({filter: $(this).data('filter')});
+    });
+    
+    
+    // Review slider
+    $('.review-slider').slick({
+        autoplay: true,
+        dots: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+    
+    
+    // Back to top button
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.back-to-top').fadeIn('slow');
+        } else {
+            $('.back-to-top').fadeOut('slow');
+        }
+    });
+    $('.back-to-top').click(function () {
+        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        return false;
+    });
+})(jQuery);
+</script>
+<script>
+
+    // Function to open the specified tab content
+    function openTab(evt, tabName) {
+        var i, tabContent, tabButton;
+
+        // Hide all tab content
+        tabContent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabContent.length; i++) {
+            tabContent[i].style.display = "none";
+        }
+
+        // Remove the "active" class from all tab buttons
+        tabButton = document.getElementsByClassName("tab-button");
+        for (i = 0; i < tabButton.length; i++) {
+            tabButton[i].className = tabButton[i].className.replace(" active", "");
+        }
+
+        // Show the specific tab content and mark the button as active
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Open the default tab on page load
+    document.getElementById("tab1").style.display = "block";
+    document.getElementsByClassName("tab-button")[0].className += " active";
+	const overlays = document.querySelectorAll('.overlay');
+
+// Add click event listener to each overlay
+overlays.forEach(overlay => {
+    overlay.addEventListener('click', () => {
+        // Get the image source from the parent gallery-item
+        const imgSrc = overlay.parentNode.querySelector('img').src;
+        // Open the image in a new window or tab
+        window.open(imgSrc);
+    });
+});
+	
+</script>
+
+  </body>
+</html>
