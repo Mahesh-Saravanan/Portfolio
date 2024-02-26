@@ -320,7 +320,8 @@ a:focus {
 }
 .header .content-inner {
     padding: 0px 20px;
-    
+    background: url(../img/profile.png) right bottom no-repeat;
+
     background-size: contain;
 }
 .header .content-inner img
@@ -334,6 +335,7 @@ a:focus {
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 10px;
+	margin-top: 50px;
 }
 
 .header h1 {
@@ -347,6 +349,7 @@ a:focus {
     margin: 0;
     height: 25px;
     font-size: 25px;
+	margin-bottom: 100px;
 }
 
 .header .typed-text {
@@ -998,7 +1001,10 @@ a:focus {
     padding: 60px 30px 30px 30px;
     background: #ffffff;
 }
-
+.contact .content-inner
+{
+	background: url(../img/contact.png) right bottom no-repeat;
+}
 .contact .contact-info {
     position: relative;
     width: 100%;
