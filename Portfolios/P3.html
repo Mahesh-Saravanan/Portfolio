@@ -102,7 +102,7 @@
 </script>
 <div id="tab1" class="tab-content">
     
-    <p>This package is designed to work with MongoDB version 7.0.1. You can find installation instructions for MongoDB here. Each significant experiment is stored as a database, and each trial is stored as a collection. Local paths for high-dimensional data (HDF5 database name) and global paths (path to HDF5 files) are stored as separate features. Data from different sources is synchronized with a common reference time (time of generation). The latest data generated within the specified time window (default: 10 nanoseconds) is recorded, while the rest is ignored.
+    <p>This package is designed to work with MongoDB version 7.0.1. Each significant experiment is stored as a database, and each trial is stored as a collection. Local paths for high-dimensional data (HDF5 database name) and global paths (path to HDF5 files) are stored as separate features. Data from different sources is synchronized with a common reference time (time of generation). The latest data generated within the specified time window (default: 10 nanoseconds) is recorded, while the rest is ignored.
 </p>
 	<div id="imageContainer">
         <img  src="img/P3/tab1.png" alt="Description of the image">
@@ -111,7 +111,7 @@
 
 <div id="tab2" class="tab-content">
     
-    <p>HDF5 stores high-dimensional data in either compressed or non-compressed formats. Users can configure the different compression and pre processing technique tailored to their use case at <i>heavy_data_call_back()</i> method in <i>datalogger.py</i> .A new file is created for each type of experiment. Data from different trials of the same experiment is stored in different Level 1 groups, and different sensors/topics are distinguished by distinct Level 2 sub-groups.
+    <p>HDF5 stores high-dimensional data in either compressed or non-compressed formats. Users can configure the different compression and pre processing technique tailored to their use case. A new file is created for each type of experiment. Data from different trials of the same experiment is stored in different Level 1 groups, and different sensors/topics are distinguished by distinct Level 2 sub-groups.
 </p>
 	<div id="imageContainer">
         <img src="img/P3/tab2.png" alt="Description of the image">

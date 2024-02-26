@@ -314,10 +314,21 @@ a:focus {
 
 .header .content-inner {
     padding: 100px 30px;
-    background: url(../img/profile.png) right bottom no-repeat;
+    display: flex;
+	align-items: center;
     background-size: contain;
 }
-
+.header .content-inner {
+    padding: 0px 20px;
+    
+    background-size: contain;
+}
+.header .content-inner img
+{
+	margin-left: 10px;
+	max-width: 300px; /* Set the maximum width of the image */
+	max-height: 300px;
+}
 .header p {
     color: #FF6F61;
     font-size: 22px;
@@ -327,7 +338,7 @@ a:focus {
 
 .header h1 {
     color: #222222;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 700;
 }
 
@@ -340,6 +351,7 @@ a:focus {
 
 .header .typed-text {
     display: none;
+	
 }
 
 .header .typed-cursor {
